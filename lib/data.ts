@@ -65,17 +65,24 @@ export const projectsData = [
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Multiplayer Chess Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
+    tags: ["React", "Next.js","socket.io","WebRTC","Node. js"],
+    imageUrl: wordanalyticsImg,
   },
   {
     title: "Multiplayer Chess Website",
     description:
       "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
     tags: ["React", "Next.js","socket.io","WebRTC","Node. js"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Multithreaded proxy server with LRU cache",
+    description:
+      "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
+    tags: ["C", "Computer Networking","System Design","Linux"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -88,16 +95,15 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Three.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "",
-  "",
-  "",
   "Express",
   "PostgreSQL",
   "Python",
   "Django",
   "Framer Motion",
+  "Unit Testing",
+  
 ] as const;

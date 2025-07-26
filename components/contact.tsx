@@ -29,14 +29,14 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contact me on LinkedIn</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        May contact me directly at{" "}
+        <a className="underline" href="mailto:vineet.goswami963@gmail.com">
+        vineet.goswami963@gmail.com
         </a>{" "}
-        or through this form.
+        But not through this form.
       </p>
 
       <form
@@ -49,7 +49,9 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email sent successfully!");
+          toast.success("Say No To Email, Contact me On LinkedIN", {
+            duration: 7000, // Display for 7 seconds (7000 milliseconds)
+          });
         }}
       >
         <input

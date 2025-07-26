@@ -7,36 +7,35 @@ import Descriptions from './description';
 const data = [
     {
         title: "I",
-        description: "Working on the Next-Generation HMI Experience without no driving experience.",
-        speed: 0.4
+        description: "",
+        speed: 0.5
     },
     {
         title: "AM",
-        description: "Developed the Future of UFC Sports Ecosystem despite not being a sports fan.",
-        speed: 0.5
+        description: "",
+        speed: 0.4
     },
     {
         title: "VINEET",
         description: "",
-        speed: 0.67
+        speed: 0.5
     },
     {
         title: "GOSWAMI",
         description: "",
-        speed: 0.8
+        speed: 0.6
     },
     {
         title: "A PRO",
         description: "",
-        speed: 1
+        speed:0.6
     },
     {
         title: "grAMMER",
-        description: "Explored the Future of Fantasy Football while being in a country where football means a total different sport.",
-        speed: 0.8
+        description: "",
+        speed: 0.6
     }
 ]
-
 
 const data2 = [
     {
@@ -80,6 +79,7 @@ export default function Projects() {
         <div className={styles.container}>
             <Titles data={data} setSelectedProject={setSelectedProject}/>
             <Descriptions data={data2} selectedProject={selectedProject}/>
+
         </div>
 
     )
