@@ -6,7 +6,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import StarsDisplay from "@/components/star/StarsDisplay"; // Ensure this path is correct
+import StarsDisplay from "@/components/star/StarsDisplay";  
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -21,43 +21,42 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+      {/* --- Main Professional Introduction --- */}
 
-      {/* Breaking down the long text into separate, semantically correct paragraphs */}
-      <p className="mb-3">
-        <span>Hello! I'm VINEET GOSWAMI</span>, a passionate 6th-semester engineering student with a keen interest in web development and machine learning, especially in computer vision. My journey into the world of programming started with a fascination for creating beautiful and functional websites, which led me to explore various technologies and frameworks like{" "}
-        <span className="font-semibold">Next.js, Node.js, and Three.js.</span>
-      </p>
+<p className="mb-3">
+  <span>Hello, I'm VINEET GOSWAMI.</span> I live at the intersection of elegant code and intelligent machines. As a full-stack developer, I architect complete digital ecosystems—crafting immersive user experiences with {" "}
+  <span className="font-semibold">Next.js and React</span> on the front-end, and powering them with robust, scalable back-ends using {" "}
+  <span className="font-semibold">Node.js</span>. By night, I'm teaching machines to see, analyzing visual data to solve complex problems in computer vision.
+</p>
 
-      <p className="mb-3">
-        I thrive on challenges and love the process of turning ideas into reality through code. My goal is to continuously learn and grow, pushing the boundaries of what's possible in the digital world.
-      </p>
+<p className="mb-3">
+  My background in competitive programming isn't just a hobby—it's the foundation for how I build everything: with a deep respect for efficiency and elegant, high-performance solutions. This mindset for optimization applies everywhere, whether it's minimizing API latency on the server or streamlining a neural network. 
+</p>
 
-      <p className="mb-3">
-        Whether it's building responsive and intuitive web applications or developing innovative solutions in machine learning, I'm always up for the challenge. Currently, I'm honing my skills in full-stack web development, combining my knowledge of front-end and back-end technologies to create seamless user experiences.
-      </p>
+<p className="mb-8">
+  For me, it’s not enough to simply build a feature; I'm driven to create holistic products where the user interface is as intelligent as the logic running behind it. This portfolio is a glimpse into that world. Dive in, and let's build something awesome together.
+</p>
 
-      <p className="mb-8"> {/* Increased bottom margin to create space before the image */}
-        I'm also deeply engaged in the field of <span className="font-semibold">computer vision</span>, working on projects that involve machine learning models for image and video analysis. I believe in the power of technology to transform lives and am excited about the endless possibilities that lie ahead. Join me on this journey as we explore the limitless potential of web development and machine learning together.
-      </p>
+{/* --- Hobbies & Interests Section --- */}
 
-      {/* New section for hobbies and interests, following the flow */}
-      <h3 className="text-xl font-semibold mb-3">Beyond the Code</h3>
-      <p className="mb-8">
-        <span className="italic">When I'm not coding</span>, I enjoy playing video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also learning how to play the guitar.
-      </p>
+<h3 className="text-xl font-semibold mb-3">The Strategist & The Sportsman</h3>
 
-      {/* Container for the image and stars, centered below the text */}
-      <div className="flex flex-col items-center justify-center w-full mb-10"> {/* Added mb-10 for space below stars */}
+<p className="mb-3">
+  When the laptop closes, the strategist in me doesn't switch off—it just changes arenas. Like many in India, I'm still processing the end of an era with Virat Kohli's retirement, but I channel that passion for the game onto the local pitch. As a batsman, I thrive on the pressure of <span className="font-medium">opening the innings or coming in at one-down</span>, setting the tone for the team. 
+</p>
+
+<p className="mb-8">
+  That same love for foresight and strategy extends to the <span className="font-medium">chessboard</span>, where every move counts. For a different kind of recharge, my time is filled with the immersive stories of movies and video games.
+</p>
+
+
+
+       <div className="flex flex-col items-center justify-center w-full mb-10">  
         <img
-          src="/cc2.png" // <--- Confirm this path! (e.g., /cc2.png if in public/, or /images/cc2.png if in public/images/)
+          src="/cc2.png"  
           alt="CodeChef Logo"
-          // Using Tailwind classes for sizing and spacing
-          className="w-[140px] h-auto object-contain mb-[-3rem]" // Adjusted width, added object-contain, increased mb
-          // Removed inline 'position: relative' as it's now in the flow
-          // The previous 'transform: translate' was for absolute positioning, not needed here
-        />
+           className="w-[140px] h-auto object-contain mb-[-3rem]"  
+         />
         <StarsDisplay />
       </div>
     </motion.section>

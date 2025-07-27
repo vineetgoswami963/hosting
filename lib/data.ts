@@ -4,7 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.jpg";
 import rmtdevImg from "@/public/rmtdev.jpg";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import proxym from "@/public/proxym.jpg";
+import chess from "@/public/chess.png";
 
 export const links = [
   {
@@ -58,32 +59,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Attendance Monitoring system",
-    description:
-      "i created a attendance monitoring model in computer vision whihc marks the attendance and update the attendance in online database making it indeendent from physical storage",
-    tags: ["openCV", "python", "firebase", "django", "ai-ml"],
-    imageUrl: corpcommentImg,
-  },
-  {
     title: "Multiplayer Chess Website",
     description:
       "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
     tags: ["React", "Next.js","socket.io","WebRTC","Node. js"],
-    imageUrl: wordanalyticsImg,
-  },
-  {
-    title: "Multiplayer Chess Website",
-    description:
-      "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
-    tags: ["React", "Next.js","socket.io","WebRTC","Node. js"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: chess,
+    source:"https://github.com/vineetgoswami963/chess-front"
   },
   {
     title: "Multithreaded proxy server with LRU cache",
     description:
-      "I created a multiplayer chess website which allows users to play chess with other person by sharing a link and do a videocall while playing with no interruption in play.",
+      "A high-performance, multithreaded proxy server designed for speed and concurrent request handling.",
     tags: ["C", "Computer Networking","System Design","Linux"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: proxym,
+    source:"https://github.com/vineetgoswami963/Proxy-Server/tree/main"
+  },
+  {
+    title: "Attendance Monitoring system",
+    description:
+    "A smart attendance system powered by computer vision that instantly marks and syncs attendance records to an online database.", 
+    tags: ["openCV", "python", "firebase", "django"],
+    imageUrl: corpcommentImg,
+    source:""
+  },
+ 
+ 
+ 
+  {
+    title: "An Ed-tech platform",
+    description:
+      "Will Publish it soon....... ",
+    tags: [],
+    imageUrl: proxym,
+    source:"https://github.com/vineetgoswami963/Proxy-Server/tree/main"
   },
 ] as const;
 
@@ -105,5 +113,5 @@ export const skillsData = [
   "Django",
   "Framer Motion",
   "Unit Testing",
-  
+
 ] as const;
